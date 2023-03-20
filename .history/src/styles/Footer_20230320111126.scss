@@ -1,0 +1,49 @@
+@import "color";
+
+footer{
+    width:100%;
+    height:80px;
+    background-color: $first;
+    color:$dark;
+    padding: 1rem;
+    display: flex;
+    justify-content:space-around;
+
+
+
+    .terms{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        >h1{
+            font: 500 2rem $text1;
+            text-transform: uppercase;
+            color: $third;
+        }
+
+        >p{
+            font: 450 1rem $text1;
+        }
+
+        >h5{
+            font: 300 2rem $text1;
+            text-align: center;
+        }
+
+        .socialMedia{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around ;
+            
+
+            >a{
+                color: $dark;
+                font: 400 1rem $text1;
+                &:hover{
+                    color: $third;
+                }
+            }
+        }
+    }
+}
